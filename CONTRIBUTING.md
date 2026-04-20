@@ -9,7 +9,13 @@
 - Get a +1 from the core team.
 - Get your changes merged.
 
-## Build dependencies
+
+# Build dependencie
+
+ check || bundle install
+bundle exec github_changelog_generator
+
+
 
 ```shell
 npm install # Node package manager install
@@ -29,7 +35,11 @@ apm publish patch # or minor, major
 
 *Make sure you have `export CHANGELOG_GITHUB_TOKEN="<123>"` variable to avoid GitHub API rate limit errors.
 
-```
+```check || bundle install
+bundle exec github_changelog_generator
 bundle check || bundle install
+
+
+
 bundle exec github_changelog_generator
 ```
